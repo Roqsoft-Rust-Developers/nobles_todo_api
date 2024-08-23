@@ -1,0 +1,17 @@
+[package]
+name = "simple-api-actix-web"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-cors = "0.6.4"
+actix-web = "4.2.1"
+chrono = { version = "0.4.23", features = ["serde"] }
+env_logger = "0.10.0"
+serde = { version = "1.0.152", features = ["derive"] }
+uuid = { version = "1.2.2", features = ["serde", "v4"] }
+dotenv = "0.15.0"
+sqlx = { version = "0.6", features = ["runtime-actix-rustls", "postgres", "chrono", "uuid"] }
+sqlx-cli = "0.8.0"
